@@ -12,11 +12,11 @@
     tools:context=".FormActivity">
 
     <TextView
-        android:id="@+id/tvRegister"
+        android:id="@+id/tv_register"
         style="@style/LayoutDimen"
         android:background="@color/headerColor"
         android:padding="45dp"
-        android:text="Registration"
+        android:text="@string/registration"
         android:textColor="@color/textColor"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +28,7 @@
         using text input layout to create floating label edit text
     -->
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputFirstName"
+        android:id="@+id/text_first_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/layoutMargin"
@@ -38,13 +38,13 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="First name"
+            android:hint="@string/first_name"
             android:textSize="@dimen/textSize"
             android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLastName"
+        android:id="@+id/text_last_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/layoutMargin"
@@ -53,13 +53,13 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Last name"
+            android:hint="@string/last_name"
             android:textSize="@dimen/textSize"
             android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputAddress"
+        android:id="@+id/text_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/layoutMargin"
@@ -68,25 +68,25 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Address"
+            android:hint="@string/address"
             android:textSize="@dimen/textSize"
             android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
-    <!--<Spinner-->
-        <!--android:id="@+id/spinner_country"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:prompt="Country"-->
-        <!--style="@style/layoutMargin"-->
-        <!--android:layout_marginTop="5dp"-->
-        <!--android:layout_marginRight="5dp"-->
-        <!--android:spinnerMode="dropdown">-->
-    <!--</Spinner>-->
+    <Spinner
+        android:id="@+id/spinner_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        style="@style/layoutMargin"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:spinnerMode="dropdown">
+    </Spinner>
 
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputPhone"
+        android:id="@+id/text_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/layoutMargin"
@@ -95,14 +95,14 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone"
+            android:hint="@string/phone"
             android:textSize="@dimen/textSize"
             android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputUsername"
+        android:id="@+id/text_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:counterEnabled="true"
@@ -113,13 +113,13 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="@string/username"
             android:textSize="@dimen/textSize"
             android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputEmail"
+        android:id="@+id/text_email"
         android:layout_width="match_parent"
         style="@style/layoutMargin"
         android:layout_height="wrap_content"
@@ -128,13 +128,13 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email"
             android:textSize="@dimen/textSize"
             android:inputType="textEmailAddress" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputPassword"
+        android:id="@+id/text_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:errorEnabled="true"
@@ -144,7 +144,7 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:textSize="@dimen/textSize"
             android:inputType="textPassword" />
     </android.support.design.widget.TextInputLayout>
@@ -159,7 +159,7 @@
         style="@style/layoutMargin"
         android:layout_marginTop="8dp"/>
     <RadioGroup
-        android:id="@+id/radioGender"
+        android:id="@+id/radio_gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/layoutMargin"
@@ -167,14 +167,14 @@
         android:layout_marginBottom="5dp">
 
         <RadioButton
-            android:id="@+id/radioMale"
+            android:id="@+id/radio_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/male"
             android:buttonTint="@color/signUpColor"/>
 
         <RadioButton
-            android:id="@+id/radioFemale"
+            android:id="@+id/radio_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/female"
@@ -188,7 +188,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Choose course"
+        android:text="@string/choose_course"
         style="@style/layoutMargin"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"/>
@@ -197,7 +197,7 @@
         android:id="@+id/java_checkbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Java"
+        android:text="@string/java"
         style="@style/layoutMargin"
         />
 
@@ -205,34 +205,34 @@
         android:id="@+id/android_checkbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Android"
+        android:text="@string/android"
         style="@style/layoutMargin"/>
 
     <CheckBox
         android:id="@+id/animation_checkbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Animation"
+        android:text="@string/animation"
         style="@style/layoutMargin"/>
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="15dp"
         android:padding="2dp"
         android:background="@color/signUpColor"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         style="@style/layoutMargin"
         android:textSize="15sp" />
 
     <Button
-        android:id="@+id/btnCancelRegister"
+        android:id="@+id/btn_cancel_reg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="2dp"
         style="@style/layoutMargin"
-        android:text="Cancel Registration"
+        android:text="@string/cancel_registration"
         android:layout_marginBottom="5dp"
         android:background="@color/cancelRegColor"
         android:textSize="15sp" />

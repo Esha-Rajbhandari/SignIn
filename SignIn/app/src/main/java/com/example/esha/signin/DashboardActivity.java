@@ -16,7 +16,7 @@ public class DashboardActivity extends AppCompatActivity{
     }
 
     private void getValue(){
-        tvShowText=findViewById(R.id.tvDisplay);
+        tvShowText=findViewById(R.id.tv_display);
         tvGenderText=findViewById(R.id.gender_display);
         Intent in=getIntent();
         if(in!=null){

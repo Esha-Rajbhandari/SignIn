@@ -121,7 +121,6 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tv_sign_up:
                 Intent intent;
                 intent = new Intent(SignInActivity.this, FormActivity.class);
-
                 startActivity(intent);
                 finish();
                 break;

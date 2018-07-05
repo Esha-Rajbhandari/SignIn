@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tvDisplay"
+        android:id="@+id/tv_display"
         style="@style/LayoutDimen"
         android:background="@color/headerColor"
         android:padding="45dp"
@@ -18,8 +18,8 @@
     <TextView
         android:id="@+id/gender_display"
         style="@style/LayoutDimen"
-        android:background="@color/headerColor"
-        android:paddinmarging="20dp"
+      
+        android:layout_margin="20dp"
         android:textColor="@color/textColor"
         android:textSize="21sp"
         />

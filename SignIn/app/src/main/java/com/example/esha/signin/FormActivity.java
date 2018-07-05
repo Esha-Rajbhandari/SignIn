@@ -39,14 +39,14 @@ public class FormActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void onClickAction() {
-        txtInputFName = findViewById(R.id.textInputFirstName);
-        txtInputLName = findViewById(R.id.textInputLastName);
-        txtUsername = findViewById(R.id.textInputUsername);
-        txtEmail = findViewById(R.id.textInputEmail);
-        txtPassword = findViewById(R.id.textInputPassword);
-        rgGender = findViewById(R.id.radioGender);
-        btnRegister = findViewById(R.id.btnRegister);
-        btnCancelReg = findViewById(R.id.btnCancelRegister);
+        txtInputFName = findViewById(R.id.text_first_name);
+        txtInputLName = findViewById(R.id.text_last_name);
+        txtUsername = findViewById(R.id.text_username);
+        txtEmail = findViewById(R.id.text_email);
+        txtPassword = findViewById(R.id.text_password);
+        rgGender = findViewById(R.id.radio_gender);
+        btnRegister = findViewById(R.id.btn_register);
+        btnCancelReg = findViewById(R.id.btn_cancel_reg);
 
 
         btnRegister.setOnClickListener(this);
@@ -113,11 +113,11 @@ public class FormActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         int id = view.getId();
         switch (id) {
-            case R.id.btnRegister:
+            case R.id.btn_register:
                 getFormData();
 
                 break;
-            case R.id.btnCancelRegister:
+            case R.id.btn_cancel_reg:
                 reset();
                 break;
         }
