@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:id="@+id/tv_header"
+        style="@style/LayoutDimen"
+        android:background="@color/headerColor"
+        android:padding="@dimen/textViewPadding"
+        android:text="@string/your_logo"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textViewTxtSize" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        style="@style/LayoutDimen"
+        android:layout_marginLeft="@dimen/layoutMargin"
+        android:layout_marginRight="@dimen/layoutMargin"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="@color/bgTint"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="6dp"
+        android:hint="Username"
+        android:textColor="@color/headerColor"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        style="@style/LayoutDimen"
+        android:layout_marginLeft="@dimen/layoutMargin"
+        android:layout_marginRight="@dimen/layoutMargin"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:backgroundTint="@color/bgTint"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="6dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/headerColor"
+        android:textSize="23sp" />
+
+    <ImageView
+        android:id="@+id/img_media"
+        style="@style/LayoutDimen"
+        android:layout_margin="@dimen/layoutMargin"
+        android:padding="@dimen/dimen20dp"
+        android:scaleType="center"
+        android:src="@drawable/fb" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/EditTextLayout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/signUpColor"
+        android:padding="6dp"
+        android:text="@string/sign_in" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/no_account" />
+
+    <TextView
+        android:id="@+id/tv_password_forget_text"
+        style="@style/LayoutDimen"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textSize="15sp" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SignIn</string>
+    <string name="tvRegister">Register</string>
+    <string name="your_logo">Your Logo</string>
+    <string name="sign_in">Sign In</string>
+    <string name="no_account">Don\'t have an account? Sign up here</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+</resources>
